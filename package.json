@@ -1,0 +1,71 @@
+{
+  "name": "case-changer",
+  "displayName": "case-changer",
+  "description": "",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "case-changer.uppercase",
+        "title": "Case Changer: Uppercase"
+      },
+      {
+        "command": "case-changer.lowercase",
+        "title": "Case Changer: Lowercase"
+      },
+      {
+        "command": "case-changer.dasherize",
+        "title": "Case Changer: Dasherize"
+      },
+      {
+        "command": "case-changer.camelize",
+        "title": "Case Changer: Camelize"
+      },
+      {
+        "command": "case-changer.classify",
+        "title": "Case Changer: Classify"
+      },
+      {
+        "command": "case-changer.underscore",
+        "title": "Case Changer: Underscore"
+      },
+
+      {
+        "command": "case-changer.capitalize",
+        "title": "Case Changer: Capitalize"
+      },
+      {
+        "command": "case-changer.decamelize",
+        "title": "Case Changer: Decamelize"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
