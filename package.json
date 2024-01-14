@@ -15,36 +15,84 @@
     "commands": [
       {
         "command": "case-changer.uppercase",
-        "title": "Case Changer: Uppercase"
+        "category": "Case Changer",
+        "title": "Uppercase (TEST VAR)"
       },
       {
         "command": "case-changer.lowercase",
-        "title": "Case Changer: Lowercase"
+        "category": "Case Changer",
+        "title": "Lowercase (test var)"
       },
       {
         "command": "case-changer.dasherize",
-        "title": "Case Changer: Dasherize"
+        "category": "Case Changer",
+        "title": "Dasherize (test_var)"
       },
       {
         "command": "case-changer.camelize",
-        "title": "Case Changer: Camelize"
+        "category": "Case Changer",
+        "title": "Camelize (testVar)"
       },
       {
         "command": "case-changer.classify",
-        "title": "Case Changer: Classify"
+        "category": "Case Changer",
+        "title": "Classify (Test var)"
       },
       {
         "command": "case-changer.underscore",
-        "title": "Case Changer: Underscore"
+        "category": "Case Changer",
+        "title": "Underscore (test_var)"
       },
 
       {
         "command": "case-changer.capitalize",
-        "title": "Case Changer: Capitalize"
-      },
+        "category": "Case Changer",
+        "title": "Capitalize (Test Var)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "case-changer.editor.context",
+          "when": "editorHasSelection",
+          "group": "1_modification"
+        }
+      ],
+      "case-changer.editor.context": [
+        {
+          "command": "case-changer.lowercase",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.dasherize",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.capitalize",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.camelize",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.underscore",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.uppercase",
+          "group": "1_modification"
+        },
+        {
+          "command": "case-changer.classify",
+          "group": "1_modification"
+        }
+      ]
+    },
+    "submenus": [
       {
-        "command": "case-changer.decamelize",
-        "title": "Case Changer: Decamelize"
+        "id": "case-changer.editor.context",
+        "label": "Case Changer"
       }
     ]
   },
