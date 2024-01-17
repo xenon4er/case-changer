@@ -95,6 +95,28 @@
         "id": "case-changer.editor.context",
         "label": "Case Changer"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "case-changer.lowercase",
+        "key": "shift+alt+u l",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "case-changer.dasherize",
+        "key": "shift+alt+u d",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "case-changer.camelize",
+        "key": "shift+alt+u c",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "case-changer.uppercase",
+        "key": "shift+alt+u u",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+      }
     ]
   },
   "scripts": {
