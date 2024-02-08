@@ -3,6 +3,10 @@
   "displayName": "case-changer",
   "description": "",
   "version": "0.0.2",
+  "repository": {
+    "type": "git",
+		"url": "https://github.com/xenon4er/case-changer"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
