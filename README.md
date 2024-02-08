@@ -1,4 +1,4 @@
-# case-changer README
+# CaSe_Changer README
 
 This extension transforms the selected text case.
 
