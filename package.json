@@ -104,7 +104,7 @@
     "keybindings": [
       {
         "command": "case-changer.lowercase",
-        "key": "shift+alt+u l",
+        "key": "shift+alt+u down",
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
       },
       {
@@ -119,6 +119,11 @@
       },
       {
         "command": "case-changer.uppercase",
+        "key": "shift+alt+u up",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "case-changer.underscore",
         "key": "shift+alt+u u",
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
       }
