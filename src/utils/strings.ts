@@ -11,7 +11,7 @@ const STRING_DECAMELIZE_REGEXP = /([a-z\d])([A-Z])/g;
 const STRING_CAMELIZE_REGEXP = /(-|_|\.|\s)+(.)?/g;
 const STRING_UNDERSCORE_REGEXP_1 = /([a-z\d])([A-Z]+)/g;
 const STRING_UNDERSCORE_REGEXP_2 = /-|\s+/g;
-const STRING_DASHERIZE_UPPERCASED_REGEXP = /^[A-Z0-9_]+$/g;
+const STRING_DASHERIZE_UPPERCASED_REGEXP = /^[A-Z0-9_]+$/;
 
 /**
  * Converts a camelized string into all lower case separated by underscores.
