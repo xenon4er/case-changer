@@ -4,7 +4,17 @@ All notable changes to the "case-changer" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.5]
+
+### Added
+
+    - Multiselect transformation
+
+### Fixed
+
+    - Dasherize title in context menu
+
+## [0.0.1]
 
 ### Added
 
