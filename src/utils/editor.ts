@@ -5,11 +5,13 @@ export function replaceSelectedTextWith(callback: (selectedText: string) => stri
 
 		if (editor) {
 			const document = editor.document;
-			const selection = editor.selection;
+			const selections = editor.selections;
 
-			const selectedText = document.getText(selection);
 			editor.edit(editBuilder => {
-				editBuilder.replace(selection, callback(selectedText));
+				for(let selection of selections) {
+					const selectedText = document.getText(selection);
+					editBuilder.replace(selection, callback(selectedText));
+				}
 			});
 		}
 }

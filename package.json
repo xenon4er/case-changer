@@ -32,7 +32,7 @@
       {
         "command": "case-changer.dasherize",
         "category": "Case Changer",
-        "title": "Dasherize (test_var)"
+        "title": "Dasherize (test-var)"
       },
       {
         "command": "case-changer.camelize",

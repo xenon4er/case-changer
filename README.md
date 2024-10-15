@@ -23,3 +23,7 @@ Also there is a context menu where you are able to select the text transformatio
 ## Extension Settings
 
 No Additional settings
+
+
+testVar
+testVar
